@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "商务模型 -新版正式"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9feabf12-91c2-4cdc-896e-d21ed31721d1"
+  }
+}

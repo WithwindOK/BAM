@@ -1,0 +1,73 @@
+table F_物资进场
+	lineageTag: 164e8419-290a-4ee4-bcfb-0eedf4eba1dd
+
+	column KEYID
+		dataType: string
+		lineageTag: 24c50e10-4708-4456-a911-76e3c32e30a4
+		summarizeBy: none
+		sourceColumn: KEYID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 日期
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 64f902ae-b750-4dcf-b0b7-ee39a2cd5799
+		summarizeBy: none
+		sourceColumn: 日期
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 价税合计
+		dataType: double
+		lineageTag: a0ee43c9-6816-4e86-bc15-35e7170614af
+		summarizeBy: sum
+		sourceColumn: 价税合计
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 金额
+		dataType: double
+		lineageTag: 73edec6e-13e6-45cf-8c25-69e101a4ef55
+		summarizeBy: sum
+		sourceColumn: 金额
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 税金
+		dataType: double
+		lineageTag: bca21c91-f4d3-48f7-86e1-24d7b063bcfa
+		summarizeBy: sum
+		sourceColumn: 税金
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 业务单号
+		dataType: string
+		lineageTag: 5b4fc62d-ae77-406f-bb35-e98fff5dc720
+		summarizeBy: none
+		sourceColumn: 业务单号
+
+		annotation SummarizationSetBy = Automatic
+
+	partition F_物资进场 = m
+		mode: import
+		queryGroup: 下游合同\合同组\合同完成量
+		source =
+				let
+				    源 = #"DW_WZ_JCMX（物资进场）"
+				in
+				    源
+
+	annotation PBI_NavigationStepName = 导航
+
+	annotation PBI_ResultType = Table
+

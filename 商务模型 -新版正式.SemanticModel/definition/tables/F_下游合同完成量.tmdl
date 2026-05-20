@@ -1,0 +1,215 @@
+table F_下游合同完成量
+	isHidden
+	lineageTag: c310d441-a5c6-4c72-bdd7-92ed88391f51
+
+	column KEYID
+		dataType: string
+		isHidden
+		lineageTag: 793f9a19-6bce-45b9-8266-ac20b47d6aed
+		summarizeBy: none
+		sourceColumn: KEYID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 日期
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: dcd3de3a-f310-476a-871a-d90ee8f51a80
+		summarizeBy: none
+		sourceColumn: 日期
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 价税合计
+		dataType: double
+		isHidden
+		lineageTag: d467b51a-fa4b-47c0-84f7-7ab4cf38b7d9
+		summarizeBy: sum
+		sourceColumn: 价税合计
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 项目名称
+		dataType: string
+		lineageTag: 2b230374-a53a-4cf9-8363-f7c40e5323ac
+		summarizeBy: none
+		sourceColumn: 项目名称
+
+		annotation SummarizationSetBy = Automatic
+
+	column 客商名称
+		dataType: string
+		lineageTag: 0e732a1d-3a60-4c33-95a7-3dc60b4a987a
+		summarizeBy: none
+		sourceColumn: 客商名称
+
+		annotation SummarizationSetBy = Automatic
+
+	column 金额
+		dataType: double
+		lineageTag: 452c3668-9e8d-4832-a20d-c3283288074d
+		summarizeBy: sum
+		sourceColumn: 金额
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 税金
+		dataType: double
+		lineageTag: e1fa2f6d-0656-4f5a-8f90-2b0afafae63b
+		summarizeBy: sum
+		sourceColumn: 税金
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 业务单号
+		dataType: string
+		lineageTag: 62774a50-680a-4f0e-a7d2-1fa68bf029fe
+		summarizeBy: none
+		sourceColumn: 业务单号
+
+		annotation SummarizationSetBy = Automatic
+
+	column 资金费用-对账
+		dataType: double
+		lineageTag: 4c2b10c0-4038-4187-ab59-1416226bbd48
+		summarizeBy: sum
+		sourceColumn: 资金费用-对账
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 财务费用-对账
+		dataType: double
+		lineageTag: 8fda5474-b80e-4ebf-acf0-4cb13b0075e6
+		summarizeBy: sum
+		sourceColumn: 财务费用-对账
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 让利-对账
+		dataType: double
+		lineageTag: c25ca9dd-e1b2-4ff1-a290-f0e90ed2a639
+		summarizeBy: sum
+		sourceColumn: 让利-对账
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 抵房补偿费-对账
+		dataType: double
+		lineageTag: c69fddab-617b-4f2b-b24a-1a816bdc866a
+		summarizeBy: sum
+		sourceColumn: 抵房补偿费-对账
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 法律诉讼费-对账
+		dataType: double
+		lineageTag: aaed1788-59de-401b-b0f7-323c6b4ec40a
+		summarizeBy: sum
+		sourceColumn: 法律诉讼费-对账
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 税金调整-对账
+		dataType: double
+		lineageTag: b05ee86a-5117-46a5-91f4-db23dd1ea52e
+		summarizeBy: sum
+		sourceColumn: 税金调整-对账
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 本月调差费用-对账
+		dataType: double
+		lineageTag: 7137113e-59f2-470d-824c-94ae7a75a3a3
+		summarizeBy: sum
+		sourceColumn: 本月调差费用-对账
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 历史调差费用-对账
+		dataType: double
+		lineageTag: 90dc2ae9-fafa-4edc-899f-75efa36d5fd0
+		summarizeBy: sum
+		sourceColumn: 历史调差费用-对账
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 合同内扣减费用-对账
+		dataType: double
+		lineageTag: 4c0e60ff-c65d-4e71-86fb-5086e2e1743a
+		summarizeBy: sum
+		sourceColumn: 合同内扣减费用-对账
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 合同内调差费用-对账
+		dataType: double
+		lineageTag: e4e47a18-98e1-4633-ab91-e239dcc6e902
+		summarizeBy: sum
+		sourceColumn: 合同内调差费用-对账
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 本月完成对账含税-对账
+		dataType: double
+		lineageTag: e67363ba-deed-4608-8ccc-af1083e10deb
+		summarizeBy: sum
+		sourceColumn: 本月完成对账含税-对账
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition F_下游合同完成量 = m
+		mode: import
+		queryGroup: 下游合同\合同组\合同完成量
+		source =
+				let
+				    源 = Table.Combine({#"DW_FB_BLMX（分包报量）", #"DW_WZ_DZMX（物资对账）", #"DW_WZ_ZLMX（租赁对账）",#"DW_WZ_JCMX（物资进场）",#"DW_WZ_TCMX（物资退场）"}),
+				    #"合并的查询（参照完整性）" = Table.NestedJoin(源, {"KEYID"}, D_下游合同_参照完整, {"KEYID"}, "D_下游合同", JoinKind.Inner),
+				    #"展开的“D_下游合同”" = Table.ExpandTableColumn(#"合并的查询（参照完整性）", "D_下游合同", {"项目名称", "客商名称"}, {"项目名称", "客商名称"}),
+				    // 0值对计数产生干扰
+				    #"筛选的行（去掉0）" = Table.SelectRows(#"展开的“D_下游合同”", each [价税合计] <> 0)
+				in
+				    #"筛选的行（去掉0）"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = 导航
+
