@@ -1,0 +1,89 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "64edc87f90f2d9156bbc",
+  "position": {
+    "x": 39.295851860875928,
+    "y": 40.699275141621492,
+    "z": 0,
+    "height": 652.59182554668951,
+    "width": 1215.3645611256625,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "D_日历"
+                    }
+                  },
+                  "Property": "年"
+                }
+              },
+              "queryRef": "D_日历.年",
+              "nativeQueryRef": "年",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "指标"
+                    }
+                  },
+                  "Property": "sum.下游合同成本锁定.价税合计"
+                }
+              },
+              "queryRef": "指标.sum.下游合同成本锁定.价税合计",
+              "nativeQueryRef": "sum.下游合同成本锁定.价税合计"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "2397e5b797506f691fea",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "D_日历"
+              }
+            },
+            "Property": "年"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "b8f02191a4c55cf6d0a2",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "指标"
+              }
+            },
+            "Property": "sum.下游合同成本锁定.价税合计"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
